@@ -1,0 +1,18 @@
+[project]
+name = "beam-designer"
+version = "2.6.0"
+description = "Steel beam analysis and simplified design checks (Streamlit)"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+ignore = ["E501"]
